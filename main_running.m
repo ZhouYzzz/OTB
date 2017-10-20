@@ -5,7 +5,7 @@ warning off all;
 
 addpath('./util');
 
-addpath(('D:\vlfeat-0.9.14\toolbox'));
+addpath(('D:/vlfeat-0.9.14/toolbox'));
 vl_setup
  
 addpath(('./rstEval'));

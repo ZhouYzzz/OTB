@@ -4,7 +4,7 @@ LineWidth = 2;
 LineStyle = '-';%':';%':' '.-'
 % Curvature = [0,0];
 
-% path_anno = '.\anno\';
+% path_anno = './anno/';
 lostCount = zeros(length(seqs), length(trks));
 thred = 0.33;
 % lostRate = zeros(length(seqs), length(trks));
