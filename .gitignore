@@ -1,4 +1,7 @@
+*.swp
 results/*
 anno/
 tmp/
 initOmit/
+sequences/
+cache/*.mat

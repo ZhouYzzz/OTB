@@ -1,7 +1,15 @@
 function seqs = configSeqsOTB100
 %% OTB 100 seqs
+cache_path = fullfile(get_global_variable('workspace_path'),'cache','seqs_OTB100.mat');
+if exist(cache_path, 'file')
+    display(['Loading sequence cache file : ' cache_path]);
+    load(cache_path);
+    return;
+end
+
+display('Automatic construct sequences information...');
 seqs = {};
-fid = fopen('../seqlist.txt','r');
+fid = fopen(fullfile(get_global_variable('workspace_path'),'sequences','seqlist.txt'),'r');
 
 sequences_root = fullfile(get_global_variable('workspace_path'),'sequences');
 
@@ -13,6 +21,8 @@ while true
 end
 
 fclose(fid);
+display(['Saving cache file to : ' cache_path]);
+save(cache_path, 'seqs');
 end
 
 function s = construct(root, sName)
