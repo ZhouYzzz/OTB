@@ -1,8 +1,4 @@
-clear
-close all;
-clc
-
-addpath('./util');
+startup;
 
 attPath = './anno/att/'; % The folder that contains the annotation files for sequence attributes
 

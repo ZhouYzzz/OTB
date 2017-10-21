@@ -1,15 +1,4 @@
-close all
-clear
-clc
-warning off all;
-
-addpath('./util');
-
-addpath(('D:/vlfeat-0.9.14/toolbox'));
-vl_setup
- 
-addpath(('./rstEval'));
-addpath(['./trackers/VIVID_Tracker'])
+startup;
 
 seqs=configSeqs;
 
