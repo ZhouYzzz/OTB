@@ -41,7 +41,7 @@ function s = construct(root, sName)
     end
     %% seqs with different gtfilename
     if (strcmp(sName, 'Human4'))
-        s = {get_seq('Human4', fullfile(root, 'Human4'), 'groundtruth_rect.2.txt')};
+        s = {get_seq('Human4.2', fullfile(root, 'Human4.2'), 'groundtruth_rect.2.txt')};
         return;
     end
 
