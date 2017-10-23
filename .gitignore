@@ -3,5 +3,5 @@ results/*
 anno/
 tmp/
 initOmit/
-sequences/
+sequences/*/
 cache/*.mat

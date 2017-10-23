@@ -21,6 +21,42 @@ while true
 end
 
 fclose(fid);
+
+% add anno to all seqs
+atts = {
+    'IV'    ,...Illumination Variation
+    'SV'    ,...Scale Variation
+    'OCC'   ,...Occlusion
+    'DEF'   ,...Deformation
+    'MB'    ,...Motion Blur
+    'FM'    ,...Fast Motion
+    'IPR'   ,...In-Plane Rotation
+    'OPR'   ,...Out-of-Plane Rotation
+    'OV'    ,...Out-of-View
+    'BC'    ,...Background Clutters
+    'LR'    ,...Low Resolution
+};
+
+att_seq_list = cell{1,length(atts)};
+for idxAtt = 1:length(atts);
+    fid = fopen(fullfile(get_global_variable('workspace_path'),'anno','att',[atts{idxAtt} '.txt']));
+    if (fid == -1), error('IO ERROR, NO FILE'); end;
+    fstr = fgetl(fid);
+    seqs_list = split(fstr,', ');
+    att_seq_list{idxAtt} = seqs_list;
+    fclose(fid);
+end
+
+for idxSeq = 1:length(seqs)
+    display([s.name, '_att']);
+    s = seqs{idxSeq};
+    att = zeros(1,length(atts));
+    for idxAtt = 1:length(atts)
+        att(idxAtt) = ismember(s.name, att_seq_list{idxAtt}); % check if seq's name is in att' seqs list
+    end
+    s.att = att;
+end
+
 display(['Saving cache file to : ' cache_path]);
 save(cache_path, 'seqs');
 end
