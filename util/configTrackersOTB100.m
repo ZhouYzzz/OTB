@@ -3,7 +3,8 @@ global global_trackers;
 global_trackers = {};
 
 %  register_tracker(tName, tDirName, tFunHandle, tSetupFun)
-register_tracker('ECO', 'ECO_RAW', 'OTB_DEEP_settings', 'setup_paths');
+register_tracker('ECO', 'ECO', 'OTB_DEEP_settings', 'setup_paths');
+register_tracker('RAECO', 'ECO_augment', 'VOT2016_DEEP_aug_best_C', 'setup_paths');
 
 trackers = global_trackers;
 end

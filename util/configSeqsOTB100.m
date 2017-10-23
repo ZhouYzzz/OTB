@@ -54,6 +54,10 @@ function s = get_seq(sName, sDir, gtfilename)
     s = struct();
     s.name = sName;
     s.path = sDir;
+
+    s.nz = 4;
+    s.ext = 'jpg';
+
     %% count frames and read groundtruth
     s.startFrame = 1;
     s.groundtruth_rect = dlmread(fullfile(sDir,gtfilename));
