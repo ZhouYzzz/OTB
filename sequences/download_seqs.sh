@@ -15,3 +15,4 @@ ln -sr Skating2 Skating2.1
 ln -sr Skating2 Skating2.2
 ln -sr Jogging Jogging.1
 ln -sr Jogging Jogging.2
+ln -sr Human4 Human4.2
