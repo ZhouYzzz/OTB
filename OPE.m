@@ -24,7 +24,7 @@ for idxSeq = 1:numSeq
     s = seqs{idxSeq};
     s.len = s.endFrame - s.startFrame + 1;
     s.s_frames = cell(s.len,1);
-    fmtstr = '%04d.jpg';
+    fmtstr = ['%0' num2str(s.nz) 'd.' s.ext];
     for i=1:s.len
         s.s_frames{i} = sprintf(fullfile(s.path,'img',fmtstr), s.startFrame + i - 1);
     end
