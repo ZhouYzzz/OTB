@@ -70,8 +70,8 @@ for idxSeq = 1:numSeq
 
             try
                 cd(t.path);
-                addpath(genpath('./'));
-                
+                % addpath(genpath('./'));
+                eval(t.fsetup);
                 eval(funcName);
                 
                 rmpath(genpath('./'))
