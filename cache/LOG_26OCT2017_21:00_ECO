@@ -1,0 +1,214 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                                                                   < M A T L A B (R) >
+                                                         Copyright 1984-2017 The MathWorks, Inc.
+                                                          R2017a (9.2.0.538062) 64-bit (glnxa64)
+                                                                    February 23, 2017
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+[H[J[H[JLoading sequence cache file : /home/zhouyz/Development/OTB/cache/seqs_OTB100.mat
+1_ECO, 1_Basketball: 1/1
+fps: 3.4698
+1_ECO, 2_Biker: 1/1
+fps: 4.3213
+1_ECO, 3_Bird1: 1/1
+fps: 4.4414
+1_ECO, 4_BlurBody: 1/1
+fps: 2.7506
+1_ECO, 5_BlurCar2: 1/1
+fps: 2.7304
+1_ECO, 6_BlurFace: 1/1
+fps: 2.5443
+1_ECO, 7_BlurOwl: 1/1
+fps: 2.7454
+1_ECO, 8_Bolt: 1/1
+fps: 4.009
+1_ECO, 9_Box: 1/1
+fps: 2.4259
+1_ECO, 10_Car1: 1/1
+fps: 2.5529
+1_ECO, 11_Car4: 1/1
+fps: 2.3214
+1_ECO, 12_CarDark: 1/1
+fps: 3.8949
+1_ECO, 13_CarScale: 1/1
+fps: 3.8235
+1_ECO, 14_ClifBar: 1/1
+fps: 3.9653
+1_ECO, 15_Couple: 1/1
+fps: 3.646
+1_ECO, 16_Crowds: 1/1
+fps: 3.9397
+1_ECO, 17_David: 1/1
+fps: 2.4097
+1_ECO, 18_Deer: 1/1
+fps: 2.1479
+1_ECO, 19_Diving: 1/1
+fps: 3.0146
+1_ECO, 20_DragonBaby: 1/1
+fps: 2.2372
+1_ECO, 21_Dudek: 1/1
+fps: 2.4322
+1_ECO, 22_Football: 1/1
+fps: 3.9131
+1_ECO, 23_Freeman4: 1/1
+fps: 3.9049
+1_ECO, 24_Girl: 1/1
+fps: 3.9728
+1_ECO, 25_Human3: 1/1
+fps: 3.0654
+1_ECO, 26_Human4.2: 1/1
+fps: 4.0093
+1_ECO, 27_Human6: 1/1
+fps: 3.656
+1_ECO, 28_Human9: 1/1
+fps: 2.468
+1_ECO, 29_Ironman: 1/1
+fps: 2.9188
+1_ECO, 30_Jump: 1/1
+fps: 2.3147
+1_ECO, 31_Jumping: 1/1
+fps: 4.0132
+1_ECO, 32_Liquor: 1/1
+fps: 2.4472
+1_ECO, 33_Matrix: 1/1
+fps: 3.6534
+1_ECO, 34_MotorRolling: 1/1
+fps: 2.276
+1_ECO, 35_Panda: 1/1
+fps: 3.7981
+1_ECO, 36_RedTeam: 1/1
+fps: 4.044
+1_ECO, 37_Shaking: 1/1
+fps: 2.3876
+1_ECO, 38_Singer2: 1/1
+fps: 2.3874
+1_ECO, 39_Skating1: 1/1
+fps: 3.0039
+1_ECO, 40_Skating2.1: 1/1
+fps: 2.4063
+1_ECO, 41_Skating2.2: 1/1
+fps: 2.1987
+1_ECO, 42_Skiing: 1/1
+fps: 3.5261
+1_ECO, 43_Soccer: 1/1
+fps: 2.3579
+1_ECO, 44_Surfer: 1/1
+fps: 3.9319
+1_ECO, 45_Sylvester: 1/1
+fps: 2.5181
+1_ECO, 46_Tiger2: 1/1
+fps: 2.3941
+1_ECO, 47_Trellis: 1/1
+fps: 2.4622
+1_ECO, 48_Walking: 1/1
+fps: 3.3205
+1_ECO, 49_Walking2: 1/1
+fps: 2.4716
+1_ECO, 50_Woman: 1/1
+fps: 4.0388
+1_ECO, 51_Bird2: 1/1
+fps: 2.1761
+1_ECO, 52_BlurCar1: 1/1
+fps: 2.3905
+1_ECO, 53_BlurCar3: 1/1
+fps: 2.3756
+1_ECO, 54_BlurCar4: 1/1
+fps: 2.4083
+1_ECO, 55_Board: 1/1
+fps: 2.2793
+1_ECO, 56_Bolt2: 1/1
+fps: 3.9467
+1_ECO, 57_Boy: 1/1
+fps: 3.7971
+1_ECO, 58_Car2: 1/1
+fps: 2.5821
+1_ECO, 59_Car24: 1/1
+fps: 3.9282
+1_ECO, 60_Coke: 1/1
+fps: 2.4714
+1_ECO, 61_Coupon: 1/1
+fps: 2.5185
+1_ECO, 62_Crossing: 1/1
+fps: 3.6475
+1_ECO, 63_Dancer: 1/1
+fps: 2.4974
+1_ECO, 64_Dancer2: 1/1
+fps: 2.4467
+1_ECO, 65_David2: 1/1
+fps: 4.1276
+1_ECO, 66_David3: 1/1
+fps: 2.4451
+1_ECO, 67_Dog: 1/1
+fps: 2.958
+1_ECO, 68_Dog1: 1/1
+fps: 4.0715
+1_ECO, 69_Doll: 1/1
+fps: 3.0621
+1_ECO, 70_FaceOcc1: 1/1
+fps: 2.3203
+1_ECO, 71_FaceOcc2: 1/1
+fps: 2.4772
+1_ECO, 72_Fish: 1/1
+fps: 2.475
+1_ECO, 73_FleetFace: 1/1
+fps: 2.488
+1_ECO, 74_Football1: 1/1
+fps: 3.4343
+1_ECO, 75_Freeman1: 1/1
+fps: 3.9737
+1_ECO, 76_Freeman3: 1/1
+fps: 3.9856
+1_ECO, 77_Girl2: 1/1
+fps: 2.3816
+1_ECO, 78_Gym: 1/1
+fps: 3.1237
+1_ECO, 79_Human2: 1/1
+fps: 2.4363
+1_ECO, 80_Human5: 1/1
+fps: 3.8009
+1_ECO, 81_Human7: 1/1
+fps: 2.1447
+1_ECO, 82_Human8: 1/1
+fps: 2.9346
+1_ECO, 83_Jogging.1: 1/1
+fps: 3.1037
+1_ECO, 84_Jogging.2: 1/1
+fps: 2.4474
+1_ECO, 85_KiteSurf: 1/1
+fps: 3.4608
+1_ECO, 86_Lemming: 1/1
+fps: 2.256
+1_ECO, 87_Man: 1/1
+fps: 3.0266
+1_ECO, 88_Mhyang: 1/1
+fps: 2.0923
+1_ECO, 89_MountainBike: 1/1
+fps: 1.9866
+1_ECO, 90_Rubik: 1/1
+fps: 2.0269
+1_ECO, 91_Singer1: 1/1
+fps: 1.9873
+1_ECO, 92_Skater: 1/1
+fps: 2.0139
+1_ECO, 93_Skater2: 1/1
+fps: 2.0956
+1_ECO, 94_Subway: 1/1
+fps: 3.027
+1_ECO, 95_Suv: 1/1
+fps: 2.147
+1_ECO, 96_Tiger1: 1/1
+fps: 2.0064
+1_ECO, 97_Toy: 1/1
+fps: 2.0811
+1_ECO, 98_Trans: 1/1
+fps: 1.8728
+1_ECO, 99_Twinnings: 1/1
+fps: 2.0828
+1_ECO, 100_Vase: 1/1
+fps: 2.5184
+10/27 3:2:32
+[?1l>

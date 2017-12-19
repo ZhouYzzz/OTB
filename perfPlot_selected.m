@@ -54,7 +54,7 @@ plotDrawStyle10={   struct('color',[1,0,0],'lineStyle','-'),...
     struct('color',[0,162,232]/255,'lineStyle','-'),...%Turquoise
     };
 
-seqs=configSeqsOTB100;
+seqs=configSeqs_selected;
 
 trackers=configTrackersOTB100;
 
@@ -69,8 +69,6 @@ for idxTrk=1:numTrk
     t = trackers{idxTrk};
     nameTrkAll{idxTrk}=t.name;
 end
-
-nameTrkAll = {'ECO','ours'};
 
 nameSeqAll=cell(numSeq,1);
 numAllSeq=zeros(numSeq,1);
@@ -130,9 +128,8 @@ for i=1:length(metricTypeSet)
             yLabelName = 'Precision';
     end  
         
-    if strcmp(metricType,'error')%&strcmp(rankingType,'AUC')
-%         continue;
-        rankingType = 'threshold';
+    if strcmp(metricType,'error')&strcmp(rankingType,'AUC')
+        continue;
     end
     
     tNum = length(thresholdSet);
@@ -154,7 +151,7 @@ for i=1:length(metricTypeSet)
         
         % If the performance Mat file, dataName, does not exist, it will call
         % genPerfMat to generate the file.
-        if ~exist(dataName)
+        if 1
             genPerfMat_OTB100(seqs, trackers, evalType, nameTrkAll, perfMatPath);
         end        
         

@@ -8,15 +8,16 @@ thresholdSetError = 0:50;
 
 switch evalType
     case 'SRE'
-        rpAll=['./results/results_SRE_CVPR13/'];
+        rpAll=['./results/results_SRE_CVPR13_github/'];
     case 'TRE'
-        rpAll=['./results/results_TRE_CVPR13/'];
+        rpAll=['./results/results_TRE_CVPR13_github/'];
     case 'OPE'
-        rpAll=['./results/results_OPE_CVPR13/'];
+        rpAll=['./results/results_TRE_CVPR13_github/'];
 end
 
 for idxSeq=1:length(seqs)
     s = seqs{idxSeq};
+    display(s.name);
     
     s.len = s.endFrame - s.startFrame + 1;
     s.s_frames = cell(s.len,1);
@@ -37,7 +38,21 @@ for idxSeq=1:length(seqs)
         t = trackers{idxTrk};
         %         load([rpAll s.name '_' t.name '.mat'], 'results','coverage','errCenter');
         
-        load([rpAll s.name '_' t.name '.mat'])
+	result_file_path = [rpAll s.name '_' t.name '.mat'];
+	if ~exist(result_file_path,'file')
+	result_file_path = [rpAll lower(s.name(1)) strrep(s.name(2:end),'.','-') '_' t.name '.mat'];
+	end
+	if ~exist(result_file_path,'file')
+	result_file_path = [rpAll s.name(1) strrep(s.name(2:end),'.','-') '_' t.name '.mat'];
+	end
+	if ~exist(result_file_path,'file')
+	result_file_path = [rpAll lower(s.name(1)) s.name(2:end) '_' t.name '.mat'];
+	end
+	if ~exist(result_file_path,'file')
+	result_file_path = [rpAll lower(s.name) '_' t.name '.mat'];
+	end
+        
+	load(result_file_path);
         % disp([s.name ' ' t.name]);
         
         aveCoverageAll=[];

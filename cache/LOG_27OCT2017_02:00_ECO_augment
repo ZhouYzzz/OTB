@@ -1,0 +1,314 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                                                                   < M A T L A B (R) >
+                                                         Copyright 1984-2017 The MathWorks, Inc.
+                                                          R2017a (9.2.0.538062) 64-bit (glnxa64)
+                                                                    February 23, 2017
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+[H[J[H[JLoading sequence cache file : /home/zhouyz/Development/OTB/cache/seqs_OTB100.mat
+2_ECO_augment, 1_Basketball: 1/1
+-- CHECKED gpu augment new version
+fps: 1.9401
+2_ECO_augment, 2_Biker: 1/1
+-- CHECKED gpu augment new version
+fps: 2.2515
+2_ECO_augment, 3_Bird1: 1/1
+-- CHECKED gpu augment new version
+fps: 2.4221
+2_ECO_augment, 4_BlurBody: 1/1
+-- CHECKED gpu augment new version
+fps: 1.3721
+2_ECO_augment, 5_BlurCar2: 1/1
+-- CHECKED gpu augment new version
+fps: 1.6061
+2_ECO_augment, 6_BlurFace: 1/1
+-- CHECKED gpu augment new version
+fps: 1.6007
+2_ECO_augment, 7_BlurOwl: 1/1
+-- CHECKED gpu augment new version
+fps: 1.601
+2_ECO_augment, 8_Bolt: 1/1
+-- CHECKED gpu augment new version
+fps: 2.1244
+2_ECO_augment, 9_Box: 1/1
+-- CHECKED gpu augment new version
+fps: 1.6001
+2_ECO_augment, 10_Car1: 1/1
+-- CHECKED gpu augment new version
+fps: 1.5852
+2_ECO_augment, 11_Car4: 1/1
+-- CHECKED gpu augment new version
+fps: 1.6299
+2_ECO_augment, 12_CarDark: 1/1
+-- CHECKED gpu augment new version
+fps: 2.8522
+2_ECO_augment, 13_CarScale: 1/1
+-- CHECKED gpu augment new version
+fps: 2.9511
+2_ECO_augment, 14_ClifBar: 1/1
+-- CHECKED gpu augment new version
+fps: 3.0668
+2_ECO_augment, 15_Couple: 1/1
+-- CHECKED gpu augment new version
+fps: 2.9168
+2_ECO_augment, 16_Crowds: 1/1
+-- CHECKED gpu augment new version
+fps: 3.0879
+2_ECO_augment, 17_David: 1/1
+-- CHECKED gpu augment new version
+fps: 1.9434
+2_ECO_augment, 18_Deer: 1/1
+-- CHECKED gpu augment new version
+fps: 1.7442
+2_ECO_augment, 19_Diving: 1/1
+-- CHECKED gpu augment new version
+fps: 1.9511
+2_ECO_augment, 20_DragonBaby: 1/1
+-- CHECKED gpu augment new version
+fps: 1.7658
+2_ECO_augment, 21_Dudek: 1/1
+-- CHECKED gpu augment new version
+fps: 1.9448
+2_ECO_augment, 22_Football: 1/1
+-- CHECKED gpu augment new version
+fps: 3.0987
+2_ECO_augment, 23_Freeman4: 1/1
+-- CHECKED gpu augment new version
+fps: 3.0733
+2_ECO_augment, 24_Girl: 1/1
+-- CHECKED gpu augment new version
+fps: 3.1051
+2_ECO_augment, 25_Human3: 1/1
+-- CHECKED gpu augment new version
+fps: 2.3396
+2_ECO_augment, 26_Human4.2: 1/1
+-- CHECKED gpu augment new version
+fps: 3.1012
+2_ECO_augment, 27_Human6: 1/1
+-- CHECKED gpu augment new version
+fps: 3.0506
+2_ECO_augment, 28_Human9: 1/1
+-- CHECKED gpu augment new version
+fps: 1.8768
+2_ECO_augment, 29_Ironman: 1/1
+-- CHECKED gpu augment new version
+fps: 2.2323
+2_ECO_augment, 30_Jump: 1/1
+-- CHECKED gpu augment new version
+fps: 1.7901
+2_ECO_augment, 31_Jumping: 1/1
+-- CHECKED gpu augment new version
+fps: 2.5514
+2_ECO_augment, 32_Liquor: 1/1
+-- CHECKED gpu augment new version
+fps: 1.8794
+2_ECO_augment, 33_Matrix: 1/1
+-- CHECKED gpu augment new version
+fps: 2.6997
+2_ECO_augment, 34_MotorRolling: 1/1
+-- CHECKED gpu augment new version
+fps: 1.7839
+2_ECO_augment, 35_Panda: 1/1
+-- CHECKED gpu augment new version
+fps: 2.9311
+2_ECO_augment, 36_RedTeam: 1/1
+-- CHECKED gpu augment new version
+fps: 3.1321
+2_ECO_augment, 37_Shaking: 1/1
+-- CHECKED gpu augment new version
+fps: 1.8848
+2_ECO_augment, 38_Singer2: 1/1
+-- CHECKED gpu augment new version
+fps: 1.8953
+2_ECO_augment, 39_Skating1: 1/1
+-- CHECKED gpu augment new version
+fps: 2.3743
+2_ECO_augment, 40_Skating2.1: 1/1
+-- CHECKED gpu augment new version
+fps: 1.7529
+2_ECO_augment, 41_Skating2.2: 1/1
+-- CHECKED gpu augment new version
+fps: 1.9015
+2_ECO_augment, 42_Skiing: 1/1
+-- CHECKED gpu augment new version
+fps: 2.6809
+2_ECO_augment, 43_Soccer: 1/1
+-- CHECKED gpu augment new version
+fps: 1.8922
+2_ECO_augment, 44_Surfer: 1/1
+-- CHECKED gpu augment new version
+fps: 3.0334
+2_ECO_augment, 45_Sylvester: 1/1
+-- CHECKED gpu augment new version
+fps: 1.9193
+2_ECO_augment, 46_Tiger2: 1/1
+-- CHECKED gpu augment new version
+fps: 1.8816
+2_ECO_augment, 47_Trellis: 1/1
+-- CHECKED gpu augment new version
+fps: 1.904
+2_ECO_augment, 48_Walking: 1/1
+-- CHECKED gpu augment new version
+fps: 3.0083
+2_ECO_augment, 49_Walking2: 1/1
+-- CHECKED gpu augment new version
+fps: 1.9146
+2_ECO_augment, 50_Woman: 1/1
+-- CHECKED gpu augment new version
+fps: 3.0919
+2_ECO_augment, 51_Bird2: 1/1
+-- CHECKED gpu augment new version
+fps: 1.687
+2_ECO_augment, 52_BlurCar1: 1/1
+-- CHECKED gpu augment new version
+fps: 1.7971
+2_ECO_augment, 53_BlurCar3: 1/1
+-- CHECKED gpu augment new version
+fps: 1.8596
+2_ECO_augment, 54_BlurCar4: 1/1
+-- CHECKED gpu augment new version
+fps: 1.8672
+2_ECO_augment, 55_Board: 1/1
+-- CHECKED gpu augment new version
+fps: 1.9113
+2_ECO_augment, 56_Bolt2: 1/1
+-- CHECKED gpu augment new version
+fps: 2.9864
+2_ECO_augment, 57_Boy: 1/1
+-- CHECKED gpu augment new version
+fps: 2.7983
+2_ECO_augment, 58_Car2: 1/1
+-- CHECKED gpu augment new version
+fps: 1.9273
+2_ECO_augment, 59_Car24: 1/1
+-- CHECKED gpu augment new version
+fps: 3.0914
+2_ECO_augment, 60_Coke: 1/1
+-- CHECKED gpu augment new version
+fps: 1.8565
+2_ECO_augment, 61_Coupon: 1/1
+-- CHECKED gpu augment new version
+fps: 1.9233
+2_ECO_augment, 62_Crossing: 1/1
+-- CHECKED gpu augment new version
+fps: 2.9252
+2_ECO_augment, 63_Dancer: 1/1
+-- CHECKED gpu augment new version
+fps: 1.8569
+2_ECO_augment, 64_Dancer2: 1/1
+-- CHECKED gpu augment new version
+fps: 1.8716
+2_ECO_augment, 65_David2: 1/1
+-- CHECKED gpu augment new version
+fps: 3.1049
+2_ECO_augment, 66_David3: 1/1
+-- CHECKED gpu augment new version
+fps: 1.8419
+2_ECO_augment, 67_Dog: 1/1
+-- CHECKED gpu augment new version
+fps: 2.2279
+2_ECO_augment, 68_Dog1: 1/1
+-- CHECKED gpu augment new version
+fps: 2.9476
+2_ECO_augment, 69_Doll: 1/1
+-- CHECKED gpu augment new version
+fps: 2.3398
+2_ECO_augment, 70_FaceOcc1: 1/1
+-- CHECKED gpu augment new version
+fps: 1.9129
+2_ECO_augment, 71_FaceOcc2: 1/1
+-- CHECKED gpu augment new version
+fps: 1.8714
+2_ECO_augment, 72_Fish: 1/1
+-- CHECKED gpu augment new version
+fps: 1.938
+2_ECO_augment, 73_FleetFace: 1/1
+-- CHECKED gpu augment new version
+fps: 1.9151
+2_ECO_augment, 74_Football1: 1/1
+-- CHECKED gpu augment new version
+fps: 2.6873
+2_ECO_augment, 75_Freeman1: 1/1
+-- CHECKED gpu augment new version
+fps: 3.047
+2_ECO_augment, 76_Freeman3: 1/1
+-- CHECKED gpu augment new version
+fps: 3.101
+2_ECO_augment, 77_Girl2: 1/1
+-- CHECKED gpu augment new version
+fps: 1.8965
+2_ECO_augment, 78_Gym: 1/1
+-- CHECKED gpu augment new version
+fps: 2.449
+2_ECO_augment, 79_Human2: 1/1
+-- CHECKED gpu augment new version
+fps: 1.8711
+2_ECO_augment, 80_Human5: 1/1
+-- CHECKED gpu augment new version
+fps: 3.0558
+2_ECO_augment, 81_Human7: 1/1
+-- CHECKED gpu augment new version
+fps: 1.8593
+2_ECO_augment, 82_Human8: 1/1
+-- CHECKED gpu augment new version
+fps: 2.1794
+2_ECO_augment, 83_Jogging.1: 1/1
+-- CHECKED gpu augment new version
+fps: 2.2697
+2_ECO_augment, 84_Jogging.2: 1/1
+-- CHECKED gpu augment new version
+fps: 1.8071
+2_ECO_augment, 85_KiteSurf: 1/1
+-- CHECKED gpu augment new version
+fps: 2.7676
+2_ECO_augment, 86_Lemming: 1/1
+-- CHECKED gpu augment new version
+fps: 1.8473
+2_ECO_augment, 87_Man: 1/1
+-- CHECKED gpu augment new version
+fps: 2.8896
+2_ECO_augment, 88_Mhyang: 1/1
+-- CHECKED gpu augment new version
+fps: 1.9484
+2_ECO_augment, 89_MountainBike: 1/1
+-- CHECKED gpu augment new version
+fps: 1.872
+2_ECO_augment, 90_Rubik: 1/1
+-- CHECKED gpu augment new version
+fps: 1.8774
+2_ECO_augment, 91_Singer1: 1/1
+-- CHECKED gpu augment new version
+fps: 1.8704
+2_ECO_augment, 92_Skater: 1/1
+-- CHECKED gpu augment new version
+fps: 1.8555
+2_ECO_augment, 93_Skater2: 1/1
+-- CHECKED gpu augment new version
+fps: 1.7858
+2_ECO_augment, 94_Subway: 1/1
+-- CHECKED gpu augment new version
+fps: 2.8767
+2_ECO_augment, 95_Suv: 1/1
+-- CHECKED gpu augment new version
+fps: 1.942
+2_ECO_augment, 96_Tiger1: 1/1
+-- CHECKED gpu augment new version
+fps: 1.8572
+2_ECO_augment, 97_Toy: 1/1
+-- CHECKED gpu augment new version
+fps: 2.3915
+2_ECO_augment, 98_Trans: 1/1
+-- CHECKED gpu augment new version
+fps: 1.8338
+2_ECO_augment, 99_Twinnings: 1/1
+-- CHECKED gpu augment new version
+fps: 1.9545
+2_ECO_augment, 100_Vase: 1/1
+-- CHECKED gpu augment new version
+fps: 2.1417
+10/27 9:42:35
+[?1l>

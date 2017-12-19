@@ -1,19 +1,30 @@
 startup;
 
-pathRes = './results/results_OPE_CVPR13/';% The folder containing the tracking results
-pathDraw = './tmp/imgs/';% The folder that will stores the images with overlaid bounding box
+pathRes = './results/OPE/';% The folder containing the tracking results
+pathDraw = './tmp/imgs_SOTA_fbf/';% The folder that will stores the images with overlaid bounding box
+
+mkdir(pathDraw);
 
 rstIdx = 1;
 
-seqs=configSeqs_selected;
+seqs=configSeqsOTB100_slash;
 
-trks=configTrackersOTB100;
+seqs = seqs([37]);
+
+trks=configTrackersSOTA('otb2015');
+
+trks=trks([1 2 3 6 7]);
+
+trks{1}.name = 'RACF';
+% seqs=configSeqs_selected;
+
+% trks=configTrackersOTB100;
 
 if isempty(rstIdx)
     rstIdx = 1;
 end
 
-LineWidth = 4;
+LineWidth = 2;
 
 plotSetting;
 
@@ -67,25 +78,36 @@ for index_seq=1:length(seqs)
         mkdir(pathSave);
     end
     
-    for i=1:seq_length
+    %% Select sequences based on seq_length
+    gap = floor(seq_length / 6);
+    selected_inds = gap:gap:seq_length;
+    
+%     for ii=1:5
+%         i = selected_inds(ii);
+    for i = 1:seq_length
         image_no = seq.startFrame + (i-1);
         id = sprintf(nz,image_no);
         fileName = strcat(seq.path,'/img/',id,'.',seq.ext);
         
         img = imread(fileName);
         
-        imshow(img);
-
-        text(10, 15, ['#' id], 'Color','y', 'FontWeight','bold', 'FontSize',24);
+        H = 300; W = 400;
+        sy = H/size(img,1);
+        sx = W/size(img,2);
+        rimg = imresize(img, [H,W]);
         
-        for j=1:length(trks)
+        imshow(rimg);
+
+        text(10, 15, ['#' id], 'Color','y', 'FontWeight','bold', 'FontSize',12);
+        
+        for j=length(trks):-1:1
             disp(trks{j}.name)            
            
             LineStyle = plotDrawStyle{j}.lineStyle;
             
             switch resultsAll{j}.type
                 case 'rect'
-                    rectangle('Position', resultsAll{j}.res(i,:), 'EdgeColor', plotDrawStyle{j}.color, 'LineWidth', LineWidth,'LineStyle',LineStyle);
+                    rectangle('Position', [sx,sy,sx,sy].*resultsAll{j}.res(i,:), 'EdgeColor', plotDrawStyle{j}.color, 'LineWidth', LineWidth,'LineStyle',LineStyle);
                 case 'ivtAff'
                     drawbox(resultsAll{j}.tmplsize, resultsAll{j}.res(i,:), 'Color', plotDrawStyle{j}.color, 'LineWidth', LineWidth,'LineStyle',LineStyle);
                 case 'L1Aff'
@@ -107,7 +129,15 @@ for index_seq=1:length(seqs)
                     disp('The type of output is not supported!')
                     continue;
             end
-        end        
+        end    
+        
+        set(gca, 'units', 'pixels');
+        x = get(gca, 'position');
+        y = get(gcf, 'position');
+        set(gcf, 'position', [y(1) y(2) x(3) x(4)]);
+        set(gca, 'units', 'normalized');
+        set(gca, 'position', [0,0,1,1]);
+        
         imwrite(frame2im(getframe(gcf)), [pathSave  num2str(i) '.png']);
     end
     clf

@@ -1,6 +1,6 @@
 function seqs = configSeqsOTB100
 %% OTB 100 seqs
-cache_path = fullfile(get_global_variable('workspace_path'),'cache','seqs_OTB100.mat');
+cache_path = fullfile(get_global_variable('workspace_path'),'cache','seqs_OTB100_slash.mat');
 if exist(cache_path, 'file')
     display(['Loading sequence cache file : ' cache_path]);
     load(cache_path);
@@ -65,20 +65,20 @@ end
 function s = construct(root, sName)
     %% seqs with 2 targets
     if (strcmp(sName, 'Skating2'))
-        s1 = get_seq('Skating2.1', fullfile(root, 'Skating2-1'), 'groundtruth_rect.1.txt');
-        s2 = get_seq('Skating2.2', fullfile(root, 'Skating2-2'), 'groundtruth_rect.2.txt');
+        s1 = get_seq('Skating2-1', fullfile(root, 'Skating2-1'), 'groundtruth_rect.1.txt');
+        s2 = get_seq('Skating2-2', fullfile(root, 'Skating2-2'), 'groundtruth_rect.2.txt');
         s = {s1, s2};
         return;
     end
     if (strcmp(sName, 'Jogging'))
-        s1 = get_seq('Jogging.1', fullfile(root, 'Jogging-1'), 'groundtruth_rect.1.txt');
-        s2 = get_seq('Jogging.2', fullfile(root, 'Jogging-2'), 'groundtruth_rect.2.txt');
+        s1 = get_seq('Jogging-1', fullfile(root, 'Jogging-1'), 'groundtruth_rect.1.txt');
+        s2 = get_seq('Jogging-2', fullfile(root, 'Jogging-2'), 'groundtruth_rect.2.txt');
         s = {s1, s2};
         return;
     end
     %% seqs with different gtfilename
     if (strcmp(sName, 'Human4'))
-        s = {get_seq('Human4.2', fullfile(root, 'Human4-2'), 'groundtruth_rect.2.txt')};
+        s = {get_seq('Human4-2', fullfile(root, 'Human4-2'), 'groundtruth_rect.2.txt')};
         return;
     end
 

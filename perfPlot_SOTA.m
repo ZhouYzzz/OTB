@@ -56,7 +56,7 @@ plotDrawStyle10={   struct('color',[1,0,0],'lineStyle','-'),...
 
 seqs=configSeqsOTB100;
 
-trackers=configTrackersOTB100;
+trackers=configTrackersSOTA('otb2015');
 
 % seqs = seqs(1:10);
 % trackers = trackers(1:10);
@@ -70,7 +70,7 @@ for idxTrk=1:numTrk
     nameTrkAll{idxTrk}=t.name;
 end
 
-nameTrkAll = {'ECO','ours'};
+%nameTrkAll = {'ECO','RAECO'};
 
 nameSeqAll=cell(numSeq,1);
 numAllSeq=zeros(numSeq,1);
@@ -89,15 +89,20 @@ end
 
 attNum = size(att,2);
 
-figPath = './figs/overall/';
+figPath = './figs/SOTA/';
 
-perfMatPath = './perfMat/overall/';
+perfMatPath = './perfMat/SOTA/';
 
 if ~exist(figPath,'dir')
     mkdir(figPath);
 end
 
-metricTypeSet = {'error', 'overlap'};
+if ~exist(perfMatPath,'dir')
+    mkdir(perfMatPath);
+end
+
+% metricTypeSet = {'overlap'};
+metricTypeSet = {'error'};
 % evalTypeSet = {'SRE', 'TRE', 'OPE'};
 evalTypeSet = {'OPE'};
 
@@ -146,8 +151,10 @@ for i=1:length(metricTypeSet)
         switch metricType
             case 'overlap'
                 titleName = ['Success plots of ' evalType];
+%                 titleName = evalType;
             case 'error'
                 titleName = ['Precision plots of ' evalType];
+%                 titleName = evalType;
         end
 
         dataName = [perfMatPath 'aveSuccessRatePlot_' num2str(numTrk) 'alg_'  plotType '.mat'];
@@ -155,7 +162,7 @@ for i=1:length(metricTypeSet)
         % If the performance Mat file, dataName, does not exist, it will call
         % genPerfMat to generate the file.
         if ~exist(dataName)
-            genPerfMat_OTB100(seqs, trackers, evalType, nameTrkAll, perfMatPath);
+            genPerfMat_SOTA(seqs, trackers, evalType, nameTrkAll, perfMatPath);
         end        
         
         load(dataName);
@@ -165,6 +172,107 @@ for i=1:length(metricTypeSet)
             rankNum = numTrk;
         end
         
+        % For table drawing, stop plotting here;
+        perSuccess = aveSuccessRatePlot(:,:,thresholdSetOverlap==0.5);
+        %% SUCCESS 1-50
+%         fid = fopen('/home/zhouyz/Documents/cvpr2018/txt/table_success_1.tex','w');
+%         
+%         for idxTrk = 1:numTrk
+%             fprintf(fid, '& \\textbf{%s} ', nameTrkAll{idxTrk});
+%         end
+%         fprintf(fid, '\\\\\\hline\n');
+%         for idxSeq = 1:50
+%             fprintf(fid, '%-12s', seqs{idxSeq}.name);
+%             perMax = max(perSuccess(:, idxSeq));
+% 
+%             for idxTrk = 1:numTrk
+%                     fprintf(fid, '& %.3f ', perSuccess(idxTrk, idxSeq));
+%             end
+%             fprintf(fid, '\\\\ \\hline \n');
+%         end
+%         fprintf(fid, '\\textbf{mean}');
+%         meanSuccess = mean(perSuccess(:, 1:50),2);
+%         for idxTrk = 1:numTrk
+%             fprintf(fid, '& \\textbf{%.3f} ', meanSuccess(idxTrk));
+%         end
+%         fprintf(fid, '\\\\\\hline\n');
+%         fclose(fid);
+        
+        %% SUCCESS 51-100
+%         fid = fopen('/home/zhouyz/Documents/cvpr2018/txt/table_success_2.tex','w');
+%         
+%         for idxTrk = 1:numTrk
+%             fprintf(fid, '& \\textbf{%s} ', nameTrkAll{idxTrk});
+%         end
+%         fprintf(fid, '\\\\\\hline\n');
+%         for idxSeq = 51:100
+%             fprintf(fid, '%-12s', seqs{idxSeq}.name);
+%             perMax = max(perSuccess(:, idxSeq));
+% 
+%             for idxTrk = 1:numTrk
+%                     fprintf(fid, '& %.3f ', perSuccess(idxTrk, idxSeq));
+%             end
+%             fprintf(fid, '\\\\ \\hline \n');
+%         end
+%         fprintf(fid, '\\textbf{mean}');
+%         meanSuccess = mean(perSuccess(:, 51:100),2);
+%         for idxTrk = 1:numTrk
+%             fprintf(fid, '& \\textbf{%.3f}', meanSuccess(idxTrk));
+%         end
+%         fprintf(fid, '\\\\\\hline\n');
+%         fclose(fid);
+
+    
+        perPrecision = aveSuccessRatePlot(:,:,thresholdSetError == 20);
+        %% PRECISON 1-50
+        fid = fopen('/home/zhouyz/Documents/cvpr2018/txt/table_success_3.tex','w');
+        
+        for idxTrk = 1:numTrk
+            fprintf(fid, '& \\textbf{%s} ', nameTrkAll{idxTrk});
+        end
+        fprintf(fid, '\\\\\\hline\n');
+        for idxSeq = 1:50
+            fprintf(fid, '%-12s', seqs{idxSeq}.name);
+            perMax = max(perPrecision(:, idxSeq));
+
+            for idxTrk = 1:numTrk
+                    fprintf(fid, '& %.3f ', perPrecision(idxTrk, idxSeq));
+            end
+            fprintf(fid, '\\\\ \\hline \n');
+        end
+        fprintf(fid, '\\textbf{mean}');
+        meanPrecision = mean(perPrecision(:, 1:50),2);
+        for idxTrk = 1:numTrk
+            fprintf(fid, '& \\textbf{%.3f}', meanPrecision(idxTrk));
+        end
+        fprintf(fid, '\\\\\\hline\n');
+        fclose(fid);
+        
+        %% PRECISON 51-100
+        fid = fopen('/home/zhouyz/Documents/cvpr2018/txt/table_success_4.tex','w');
+        
+        for idxTrk = 1:numTrk
+            fprintf(fid, '& \\textbf{%s} ', nameTrkAll{idxTrk});
+        end
+        fprintf(fid, '\\\\\\hline\n');
+        for idxSeq = 51:100
+            fprintf(fid, '%-12s', seqs{idxSeq}.name);
+            perMax = max(perPrecision(:, idxSeq));
+
+            for idxTrk = 1:numTrk
+                    fprintf(fid, '& %.3f ', perPrecision(idxTrk, idxSeq));
+            end
+            fprintf(fid, '\\\\ \\hline \n');
+        end
+        fprintf(fid, '\\textbf{mean}');
+        meanPrecision = mean(perPrecision(:, 51:100),2);
+        for idxTrk = 1:numTrk
+            fprintf(fid, '& \\textbf{%.3f}', meanPrecision(idxTrk));
+        end
+        fprintf(fid, '\\\\\\hline\n');
+        fclose(fid);
+        return;
+        %% =========================
         figName= [figPath 'quality_plot_' plotType '_' rankingType];
         idxSeqSet = 1:length(seqs);
         
@@ -187,9 +295,11 @@ for i=1:length(metricTypeSet)
             
             switch metricType
                 case 'overlap'
-                    titleName = ['Success plots of ' evalType ' - ' attName{attIdx} ' (' num2str(length(idxSeqSet)) ')'];
+%                     titleName = ['Success plots of ' evalType ' - ' attName{attIdx} ' (' num2str(length(idxSeqSet)) ')'];
+                    titleName = [attName{attIdx} ' (' num2str(length(idxSeqSet)) ')'];
                 case 'error'
-                    titleName = ['Precision plots of ' evalType ' - ' attName{attIdx} ' (' num2str(length(idxSeqSet)) ')'];
+%                     titleName = ['Precision plots of ' evalType ' - ' attName{attIdx} ' (' num2str(length(idxSeqSet)) ')'];
+                    titleName = [attName{attIdx} ' (' num2str(length(idxSeqSet)) ')'];
             end
             
             plotDrawSave(numTrk,plotDrawStyle,aveSuccessRatePlot,idxSeqSet,rankNum,rankingType,rankIdx,nameTrkAll,thresholdSet,titleName, xLabelName,yLabelName,figName,metricType);

@@ -1,0 +1,29 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2017 The MathWorks, Inc.
+                   R2017a (9.2.0.538062) 64-bit (glnxa64)
+                             February 23, 2017
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+[H[J[H[JLoading sequence cache file : /home/zhouyz/Development/OTB/cache/seqs_OTB100.mat
+4_ECO_tune_27OCT, 1_Basketball: 1/1
+fps: 2.5174
+4_ECO_tune_27OCT, 2_Biker: 1/1
+fps: 3.0543
+4_ECO_tune_27OCT, 3_Bird1: 1/1
+fps: 3.2196
+4_ECO_tune_27OCT, 4_BlurBody: 1/1
+fps: 2.0461
+4_ECO_tune_27OCT, 5_BlurCar2: 1/1
+fps: 1.9864
+4_ECO_tune_27OCT, 6_BlurFace: 1/1
+fps: 1.9473
+4_ECO_tune_27OCT, 7_BlurOwl: 1/1
+fps: 1.9888
+4_ECO_tune_27OCT, 8_Bolt: 1/1
+fps: 3.1435
+4_ECO_tune_27OCT, 9_Box: 1/1

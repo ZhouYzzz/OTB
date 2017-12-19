@@ -1,0 +1,224 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                              < M A T L A B (R) >
+                    Copyright 1984-2017 The MathWorks, Inc.
+                     R2017a (9.2.0.538062) 64-bit (glnxa64)
+                               February 23, 2017
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+[H[J[H[JLoading sequence cache file : /home/zhouyz/Development/OTB/cache/seqs_OTB100.mat
+  Basketball	     ECO_raw	0.65255
+  Basketball	ECO_tune_28OCT6	0.71041
+       Biker	     ECO_raw	0.5057
+       Biker	ECO_tune_28OCT6	0.41348
+       Bird1	     ECO_raw	0.19153
+       Bird1	ECO_tune_28OCT6	0.18091
+    BlurBody	     ECO_raw	0.71315
+    BlurBody	ECO_tune_28OCT6	0.71215
+    BlurCar2	     ECO_raw	0.88311
+    BlurCar2	ECO_tune_28OCT6	0.87741
+    BlurFace	     ECO_raw	0.83435
+    BlurFace	ECO_tune_28OCT6	0.85135
+     BlurOwl	     ECO_raw	0.79194
+     BlurOwl	ECO_tune_28OCT6	0.83805
+        Bolt	     ECO_raw	0.64653
+        Bolt	ECO_tune_28OCT6	0.65102
+         Box	     ECO_raw	0.74771
+         Box	ECO_tune_28OCT6	0.3431
+        Car1	     ECO_raw	0.85364
+        Car1	ECO_tune_28OCT6	0.83973
+        Car4	     ECO_raw	0.85902
+        Car4	ECO_tune_28OCT6	0.85642
+     CarDark	     ECO_raw	0.86005
+     CarDark	ECO_tune_28OCT6	0.86247
+    CarScale	     ECO_raw	0.7398
+    CarScale	ECO_tune_28OCT6	0.73658
+     ClifBar	     ECO_raw	0.57284
+     ClifBar	ECO_tune_28OCT6	0.5791
+      Couple	     ECO_raw	0.67279
+      Couple	ECO_tune_28OCT6	0.67041
+      Crowds	     ECO_raw	0.70207
+      Crowds	ECO_tune_28OCT6	0.70125
+       David	     ECO_raw	0.83359
+       David	ECO_tune_28OCT6	0.8253
+        Deer	     ECO_raw	0.79209
+        Deer	ECO_tune_28OCT6	0.7666
+      Diving	     ECO_raw	0.32625
+      Diving	ECO_tune_28OCT6	0.2835
+  DragonBaby	     ECO_raw	0.6949
+  DragonBaby	ECO_tune_28OCT6	0.72482
+       Dudek	     ECO_raw	0.81539
+       Dudek	ECO_tune_28OCT6	0.84508
+    Football	     ECO_raw	0.62497
+    Football	ECO_tune_28OCT6	0.66732
+    Freeman4	     ECO_raw	0.56402
+    Freeman4	ECO_tune_28OCT6	0.50597
+        Girl	     ECO_raw	0.78219
+        Girl	ECO_tune_28OCT6	0.77429
+      Human3	     ECO_raw	0.61246
+      Human3	ECO_tune_28OCT6	0.62769
+    Human4.2	     ECO_raw	0.62212
+    Human4.2	ECO_tune_28OCT6	0.6072
+      Human6	     ECO_raw	0.78253
+      Human6	ECO_tune_28OCT6	0.79323
+      Human9	     ECO_raw	0.80187
+      Human9	ECO_tune_28OCT6	0.79641
+     Ironman	     ECO_raw	0.59839
+     Ironman	ECO_tune_28OCT6	0.36087
+        Jump	     ECO_raw	0.096409
+        Jump	ECO_tune_28OCT6	0.089383
+     Jumping	     ECO_raw	0.7079
+     Jumping	ECO_tune_28OCT6	0.71018
+      Liquor	     ECO_raw	0.83789
+      Liquor	ECO_tune_28OCT6	0.86114
+      Matrix	     ECO_raw	0.5419
+      Matrix	ECO_tune_28OCT6	0.56714
+MotorRolling	     ECO_raw	0.094077
+MotorRolling	ECO_tune_28OCT6	0.72822
+       Panda	     ECO_raw	0.39595
+       Panda	ECO_tune_28OCT6	0.41114
+     RedTeam	     ECO_raw	0.68742
+     RedTeam	ECO_tune_28OCT6	0.73162
+     Shaking	     ECO_raw	0.77991
+     Shaking	ECO_tune_28OCT6	0.81161
+     Singer2	     ECO_raw	0.73653
+     Singer2	ECO_tune_28OCT6	0.76373
+    Skating1	     ECO_raw	0.49476
+    Skating1	ECO_tune_28OCT6	0.50131
+  Skating2.1	     ECO_raw	0.47377
+  Skating2.1	ECO_tune_28OCT6	0.48817
+  Skating2.2	     ECO_raw	0.38075
+  Skating2.2	ECO_tune_28OCT6	0.36726
+      Skiing	     ECO_raw	0.095238
+      Skiing	ECO_tune_28OCT6	0.49735
+      Soccer	     ECO_raw	0.61285
+      Soccer	ECO_tune_28OCT6	0.49065
+      Surfer	     ECO_raw	0.70517
+      Surfer	ECO_tune_28OCT6	0.69263
+   Sylvester	     ECO_raw	0.71606
+   Sylvester	ECO_tune_28OCT6	0.62864
+      Tiger2	     ECO_raw	0.68089
+      Tiger2	ECO_tune_28OCT6	0.67136
+     Trellis	     ECO_raw	0.77019
+     Trellis	ECO_tune_28OCT6	0.75362
+     Walking	     ECO_raw	0.7092
+     Walking	ECO_tune_28OCT6	0.73925
+    Walking2	     ECO_raw	0.79286
+    Walking2	ECO_tune_28OCT6	0.78924
+       Woman	     ECO_raw	0.7702
+       Woman	ECO_tune_28OCT6	0.81088
+       Bird2	     ECO_raw	0.78163
+       Bird2	ECO_tune_28OCT6	0.7874
+    BlurCar1	     ECO_raw	0.85085
+    BlurCar1	ECO_tune_28OCT6	0.84379
+    BlurCar3	     ECO_raw	0.8398
+    BlurCar3	ECO_tune_28OCT6	0.85488
+    BlurCar4	     ECO_raw	0.87632
+    BlurCar4	ECO_tune_28OCT6	0.87857
+       Board	     ECO_raw	0.81594
+       Board	ECO_tune_28OCT6	0.76764
+       Bolt2	     ECO_raw	0.56802
+       Bolt2	ECO_tune_28OCT6	0.59207
+         Boy	     ECO_raw	0.84132
+         Boy	ECO_tune_28OCT6	0.84836
+        Car2	     ECO_raw	0.85834
+        Car2	ECO_tune_28OCT6	0.86278
+       Car24	     ECO_raw	0.88549
+       Car24	ECO_tune_28OCT6	0.88267
+        Coke	     ECO_raw	0.53903
+        Coke	ECO_tune_28OCT6	0.54639
+      Coupon	     ECO_raw	0.88467
+      Coupon	ECO_tune_28OCT6	0.36814
+    Crossing	     ECO_raw	0.78016
+    Crossing	ECO_tune_28OCT6	0.78214
+      Dancer	     ECO_raw	0.78074
+      Dancer	ECO_tune_28OCT6	0.77503
+     Dancer2	     ECO_raw	0.72952
+     Dancer2	ECO_tune_28OCT6	0.7219
+      David2	     ECO_raw	0.83657
+      David2	ECO_tune_28OCT6	0.81467
+      David3	     ECO_raw	0.77438
+      David3	ECO_tune_28OCT6	0.75283
+         Dog	     ECO_raw	0.59693
+         Dog	ECO_tune_28OCT6	0.63967
+        Dog1	     ECO_raw	0.80056
+        Dog1	ECO_tune_28OCT6	0.82942
+        Doll	     ECO_raw	0.84152
+        Doll	ECO_tune_28OCT6	0.82926
+    FaceOcc1	     ECO_raw	0.78139
+    FaceOcc1	ECO_tune_28OCT6	0.77611
+    FaceOcc2	     ECO_raw	0.76677
+    FaceOcc2	ECO_tune_28OCT6	0.75991
+        Fish	     ECO_raw	0.84884
+        Fish	ECO_tune_28OCT6	0.84154
+   FleetFace	     ECO_raw	0.7351
+   FleetFace	ECO_tune_28OCT6	0.71516
+   Football1	     ECO_raw	0.53604
+   Football1	ECO_tune_28OCT6	0.62098
+    Freeman1	     ECO_raw	0.55332
+    Freeman1	ECO_tune_28OCT6	0.52673
+    Freeman3	     ECO_raw	0.80166
+    Freeman3	ECO_tune_28OCT6	0.7677
+       Girl2	     ECO_raw	0.65498
+       Girl2	ECO_tune_28OCT6	0.73384
+         Gym	     ECO_raw	0.48631
+         Gym	ECO_tune_28OCT6	0.43608
+      Human2	     ECO_raw	0.79222
+      Human2	ECO_tune_28OCT6	0.7687
+      Human5	     ECO_raw	0.73653
+      Human5	ECO_tune_28OCT6	0.78308
+      Human7	     ECO_raw	0.83619
+      Human7	ECO_tune_28OCT6	0.83867
+      Human8	     ECO_raw	0.73958
+      Human8	ECO_tune_28OCT6	0.70685
+   Jogging.1	     ECO_raw	0.77106
+   Jogging.1	ECO_tune_28OCT6	0.17977
+   Jogging.2	     ECO_raw	0.73352
+   Jogging.2	ECO_tune_28OCT6	0.66496
+    KiteSurf	     ECO_raw	0.7568
+    KiteSurf	ECO_tune_28OCT6	0.7415
+     Lemming	     ECO_raw	0.81672
+     Lemming	ECO_tune_28OCT6	0.23845
+         Man	     ECO_raw	0.8248
+         Man	ECO_tune_28OCT6	0.78394
+      Mhyang	     ECO_raw	0.82812
+      Mhyang	ECO_tune_28OCT6	0.80872
+MountainBike	     ECO_raw	0.67962
+MountainBike	ECO_tune_28OCT6	0.67899
+       Rubik	     ECO_raw	0.77492
+       Rubik	ECO_tune_28OCT6	0.78239
+     Singer1	     ECO_raw	0.84846
+     Singer1	ECO_tune_28OCT6	0.84439
+      Skater	     ECO_raw	0.59167
+      Skater	ECO_tune_28OCT6	0.56905
+     Skater2	     ECO_raw	0.57471
+     Skater2	ECO_tune_28OCT6	0.57209
+      Subway	     ECO_raw	0.71782
+      Subway	ECO_tune_28OCT6	0.7034
+         Suv	     ECO_raw	0.78614
+         Suv	ECO_tune_28OCT6	0.78186
+      Tiger1	     ECO_raw	0.73543
+      Tiger1	ECO_tune_28OCT6	0.71592
+         Toy	     ECO_raw	0.67124
+         Toy	ECO_tune_28OCT6	0.69566
+       Trans	     ECO_raw	0.50154
+       Trans	ECO_tune_28OCT6	0.53687
+   Twinnings	     ECO_raw	0.62621
+   Twinnings	ECO_tune_28OCT6	0.78349
+        Vase	     ECO_raw	0.54384
+        Vase	ECO_tune_28OCT6	0.54244
+illumination variation 38
+out-of-plane rotation 64
+scale variation 49
+occlusion 44
+deformation 29
+motion blur 39
+fast motion 51
+in-plane rotation 63
+out of view 14
+background clutter 31
+low resolution 9
+[?1l>

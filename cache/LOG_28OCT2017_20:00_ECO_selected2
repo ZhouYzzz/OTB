@@ -1,0 +1,33 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                              < M A T L A B (R) >
+                    Copyright 1984-2017 The MathWorks, Inc.
+                     R2017a (9.2.0.538062) 64-bit (glnxa64)
+                               February 23, 2017
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+[H[J[H[JLemming
+Jogging.1
+Jogging.2
+Lemming_att
+Jogging.1_att
+Jogging.2_att
+     Lemming	     ECO_raw	0.81672
+     Lemming	ECO_tune_28OCT6	0.23845
+     Lemming	ECO_tune_28OCT7	0.80696
+     Lemming	ECO_tune_28OCT8	0.80742
+     Lemming	ECO_tune_28OCT9	0.23567
+     Lemming	ECO_tune_28OCT10	0.80678
+   Jogging.1	     ECO_raw	0.77106
+   Jogging.1	ECO_tune_28OCT6	0.17977
+   Jogging.1	ECO_tune_28OCT7	0.18055
+   Jogging.1	ECO_tune_28OCT8	0.17946
+   Jogging.1	ECO_tune_28OCT9	0.1807
+   Jogging.1	ECO_tune_28OCT10	0.1807
+   Jogging.2	     ECO_raw	0.73352
+   Jogging.2	ECO_tune_28OCT6	0.66496
+>> exit
+[?1l>
